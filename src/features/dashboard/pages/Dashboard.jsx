@@ -1,4 +1,5 @@
 import DashboardLayout from "../../../components/layout/DashboardLayout";
+import { Link } from "react-router-dom";
 
 export default function Dashboard() {
     return (
@@ -7,6 +8,13 @@ export default function Dashboard() {
             <p className="mt-2 text-gray-600">
                 You are logged in successfully.
             </p>
+
+            <Link
+                to="/"
+                className="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+            >
+                Logout
+            </Link>
         </DashboardLayout>
     );
 }
