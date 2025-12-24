@@ -1,5 +1,10 @@
-export default function Label({ text }) {
+export default function Label({ text, htmlFor }) {
     return (
-        <label className="text-sm font-medium">{text}</label>
+        <label
+        htmlFor= {htmlFor}
+        className="block text-sm font-medium text-gray-700"
+        >
+            {text}
+        </label>
     );
 }

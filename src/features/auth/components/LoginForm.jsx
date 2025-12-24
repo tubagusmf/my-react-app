@@ -16,13 +16,13 @@ export default function LoginForm() {
     return (
         <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
-                <Label text="Email" />
-                <Input type="email" placeholder="Please enter your email" />
+                <Label text="Email" htmlFor="email" />
+                <Input type="email" placeholder="Please enter your email" name="email" id="email" />
             </div>
 
             <div>
-                <Label text="Password" />
-                <Input type="password" placeholder="Please enter your password" />
+                <Label text="Password" htmlFor="password" />
+                <Input type="password" placeholder="Please enter your password" name="password" id="password" />
             </div>
 
             <Button text="Login" type="submit" />
